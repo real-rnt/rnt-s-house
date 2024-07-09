@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    animation: fadeInAnimation ease 2s;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: rgb(150, 121, 239) !important;
+    transform: translateY(-1px);
+}
+
+/* marquee top bar animation */
+
+.marquee{
+    width: 98%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee #marqueeitem{
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* nav styling */
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav .logo{
+    width: 64px;
+    height: 64px;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgb(53, 45, 73) ;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dice{
+    color: white;
+    font-size: 26px;
+    transition: all 0.3s ease;
+}
+
+#dice:hover{
+    color: rgb(150, 121, 239) !important;
+}
+
+nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgb(53, 45, 73) ;
+    width: 100%;
+    border-radius: 48px;
+    padding: 0 30px;
+}
+
+#github{
+    font-size: 30px;   
+}
+
+/* about styling */
+.about-main{
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgb(53, 45, 73) ;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+#profission{
+    color: #bdbdbd;
+    font-size: 24px;
+}
+#typewriter{
+    color: #bdbdbd;
+    font-weight: 400;
+    font-size: 50px;
+}
+.about .left .info{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about .left .info p{
+    color: #bdbdbd;
+}
+.about .left .info .buttons button{
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.email{
+    color: #bdbdbd;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgb(53, 45, 73) ;
+}
+.email:hover{
+    background-color:rgb(160, 152, 177);
+    color: black;
+}
+
+.about .right img{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+/* some links styling */
+
+.about-links{
+    padding: 30px 30px;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgb(53, 45, 73) ;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-wrap: nowrap;
+    gap: 15px;
+}
+
+#links-title{
+    color: #bdbdbd;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.links-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.links-items a:hover{
+    text-decoration: underline;
+}
+/* projects styling */
+
+.projects{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 60px;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgb(53, 45, 73) ;
+    border-radius: 15px;
+}
+.projects h2{
+    color: #bdbdbd;
+    font-size: 26px;
+    font-weight: 400;
+}
+.projects .project-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.projects .project-list .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .project-list .item p{
+    color: #bdbdbd;
+}
+
+.project-name{
+    font-size: 30px;
+}
+
+/* blog styling */
+.blog{
+    padding: 40px 60px;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgb(53, 45, 73) ;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog h2{
+    color: #bdbdbd;
+    font-weight: 400;
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.blog-content-formater{
+    display: flex;
+    gap: 6px;
+    text-wrap: nowrap;
+}
+
+.blog-content-formater p{
+    color: #bdbdbd;
+}
+
+.blog-topic{
+    font-size: 18px;
+}
+
+.blog-topic:hover{
+    text-decoration: underline;
+}
+
+/* footer styling */
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #bdbdbd;
+    gap: 10px;
+}
+
+/* body animation */
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* making responsive */
+
+@media (max-width: 1500px){
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 1229px){
+    body{
+        height: 100%;
+        width: 1229px;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .projects{
+        font-size: 1.5rem;
+    }
+    .projects h2{
+        font-size: 2rem;
+    }
+    .project-name{
+        font-size: 2.5rem;
+    }
+
+    .blog{
+        font-size: 1.4rem;
+    }
+    .blog-topic{
+        font-size: 1.5rem;
+    }
+    #links-title{
+        font-size: 1.7rem;
+    }
+    .links-items a{
+        font-size: 1.5rem;
+    }
+}
