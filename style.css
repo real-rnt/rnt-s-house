@@ -67,6 +67,10 @@ nav .logo{
     justify-content: center;
 }
 
+#text-for-smaller{
+    display: none;
+}
+
 #dice{
     color: white;
     font-size: 26px;
@@ -96,6 +100,7 @@ nav .links{
 .about-main{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 .about{
     flex-basis: 100%;
@@ -106,7 +111,6 @@ nav .links{
     background-color: rgb(13, 13, 13);
     border: 1px solid rgb(53, 45, 73) ;
     border-radius: 15px;
-    margin-top: 40px;
 }
 
 #profission{
@@ -161,7 +165,6 @@ nav .links{
     background-color: rgb(13, 13, 13);
     border: 1px solid rgb(53, 45, 73) ;
     border-radius: 15px;
-    margin-top: 40px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -215,7 +218,7 @@ nav .links{
 }
 .projects .project-list .item{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -241,6 +244,7 @@ nav .links{
 
 .blog h2{
     color: #bdbdbd;
+    font-size: 26px;
     font-weight: 400;
 }
 
@@ -303,31 +307,168 @@ footer{
 
 @media (max-width: 1229px){
     body{
-        height: 100%;
-        width: 1229px;
         margin: 0;
-        font-size: 1.5rem;
+    }
+    .about{
+        padding: 30px;
     }
     .projects{
-        font-size: 1.5rem;
+        padding: 30px;
     }
-    .projects h2{
-        font-size: 2rem;
-    }
-    .project-name{
-        font-size: 2.5rem;
-    }
-
     .blog{
-        font-size: 1.4rem;
+        padding: 30px;
     }
-    .blog-topic{
-        font-size: 1.5rem;
+    .about-links{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    a{
+        font-size: 10px;
+    }
+    nav .logo{
+        height: 35px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    nav .links{
+        padding: 0 15px;
+    }
+    #dice{
+        font-size: 15px;
+    }
+    #github{
+        font-size: 15px;
+    }
+    .about-main{
+        margin-top: 25px;
+    }
+    #typewriter{
+        font-size: 20px;
+    }
+    #profission{
+        font-size: 14px;
     }
     #links-title{
-        font-size: 1.7rem;
+        font-size: 12px;
     }
-    .links-items a{
-        font-size: 1.5rem;
+    .about .left .info .buttons button{
+        font-size: 10px;
+    }
+    .about .right img{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .projects{
+        gap: 20px;
+    }
+    .projects h2{
+        font-size: 16px;
+    }
+    .project-name{
+        font-size: 18px;
+    }
+    .projects .project-list .item p{
+        font-size: 10px;
+    }
+    .blog h2{
+        font-size: 16px;
+    }
+    .blog-content-formater p{
+        display: none;
+    }
+    .blog-topic{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 573px){
+    .about{
+        padding: 14px;
+    }
+    .projects{
+        padding: 14px;
+    }
+    .blog{
+        padding: 14px;
+    }
+    .about-links{
+        padding: 10px;
+    }
+    a{
+        font-size: 10px;
+    }
+    nav{
+        gap: 10px;
+    }
+    nav .logo{
+        height: 35px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    nav .links{
+        padding: 0 10px;
+    }
+    .marquee{
+        display: none;
+    }
+    #text-for-smaller{
+        display: block;
+    }
+    #dice{
+        font-size: 15px;
+    }
+    #github{
+        font-size: 15px;
+
+    }
+    .about-main{
+        margin-top: 25px;
+    }
+    #typewriter{
+        font-size: 20px;
+    }
+    #profission{
+        font-size: 10px;
+    }
+    #links-title{
+        font-size: 12px;
+    }
+    .about .left .info{
+        margin-top: 16px;
+        gap: 16px;
+    }
+    .about .left .info .buttons button{
+        font-size: 6px;
+    }
+    .about .right img{
+        display: none;
+    }
+    .projects h2{
+        font-size: 16px;
+    }
+    .project-name{
+        font-size: 12px;
+    }
+    .projects .project-list .item p{
+        font-size: 8px;
+    }
+    .blog{
+        gap: 20px;
+    }
+    .blog h2{
+        font-size: 14px;
+    }
+    .blog-content-formater p{
+        display: none;
+    }
+    .blog-topic{
+        font-size: 10px;
+    }
+    footer{
+        font-size: 10px;
     }
 }
