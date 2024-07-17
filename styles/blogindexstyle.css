@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    animation: fadeInAnimation ease 2s;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: rgb(150, 121, 239) !important;
+    transform: translateY(-1px);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#backwards{
+    font-size: 22px;    
+}
+
+#title{
+    color: #bdbdbd;
+    font-size: 46px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.blog-topics{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin-left: 0px;
+}
+
+.blog-topics-formatter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog-topics-formatter p{
+    color: #bdbdbd;
+    font-size: 24px;
+}
+
+.blog-topic{
+    font-size: 36px;
+}
