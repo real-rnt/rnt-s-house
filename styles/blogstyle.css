@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    animation: fadeInAnimation ease 2s;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* body animation */
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: rgb(150, 121, 239) !important;
+    transform: translateY(-1px);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    color: #bdbdbd;
+    font-size: 24px;
+    text-align: start;
+    font-weight: 400;
+}
+
+.content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content p{
+    color: white;
+    line-height: 1.5;
+    font-size: 20px;
+}
